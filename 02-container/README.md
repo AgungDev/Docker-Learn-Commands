@@ -34,7 +34,8 @@
 
 ## Perintah Dasar Docker Container
 
-1. **Menjalankan Container**:
-   ```bash
-   docker run -d -p 8080:80 nginx
-   ```
+**Menjalankan Container**:
+
+```bash
+docker run -d -p 8080:80 nginx
+```
