@@ -68,11 +68,3 @@ Docker adalah platform open-source yang dirancang untuk membantu pengembang memb
 | **Portabilitas**           | Sangat mudah               | Tidak semudah Docker                |
 
 ---
-
-## Contoh Penggunaan Docker
-
-### 1. Menjalankan Nginx sebagai Web Server
-
-```bash
-docker run -d -p 8080:80 nginx
-```
