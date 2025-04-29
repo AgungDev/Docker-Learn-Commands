@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:alpine
+    container_name: default_postgres_db
+    environment:
+      POSTGRES_PASSWORD: admin  # Ganti dengan password sesuai kebutuhan
+    ports:
+      - "5432:5432"  # Forward port 5432
+    deploy:
+      resources:
+        limits:
+          cpus: '0.1'  # Batas CPU 0.5 core
+          memory: 100M  # Batas memori 100MB
+    volumes:
+      - postgres_volume:/var/lib/postgresql/data  # Data volume
+      - postgres_backup_volume:/var/lib/postgresql/backup  # Backup volume
+
+volumes:
+  postgres_volume:
+  postgres_backup_volume:
